@@ -1,0 +1,40 @@
+{% extends "layout.html"%}
+{% block content %}
+<div class= "content">
+    <div class="form">
+        <form action="/" method="post">
+            <label for="restaurant"> Restaurant </label>
+            <select name="restaurant">
+                {% for rest in data.restaurants %}
+                <option> {{ rest }} </option>
+                {% endfor %}
+            </select>
+            <label for="option" > Info </label>
+            <select name="option">
+                <option> CSM </option>
+                <option> Average CSM vs Yelp Factor</option>
+                <option> Vegetarian Factor vs Average Tip </option>
+                <option> Vegetarian Factor vs Yelp Factor</option>
+            </select>
+            <select name="date">
+                {% for d in data.dlist %}
+                <option> {{ d }} </option>
+                {% endfor %}
+            </select>
+            <input type="submit" value="Submit">
+        </form>
+        <div id="results">
+            <h2> {{ restaurant_name }} </h2>
+            {% for s in selected %}
+            <div class="selected"> {{ s }} </div>
+            {% endfor %}
+            {% for r in result %}
+            <div class="result"> {{ r }} </div>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="result">
+          
+    </div>
+</div>
+{% endblock %}
