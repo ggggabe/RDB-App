@@ -1,0 +1,125 @@
+/*
+ * Standard resets
+ */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+html {
+    height : 100%;
+    width  : 100%;
+}
+
+body {
+    background-color: #FAFAFA;
+    color: #262525;
+    height: 100%;
+    width : 100%;
+}
+/*
+ * Container
+ */
+
+.container {
+    width: 100%;
+    height:100%;
+    /*Perhaps put in a min width? We dont' care about this right now*/
+    min-width: 460px;
+}
+/*
+ * Header
+ */
+
+
+.header {
+    background-color: #690202;
+    color: #FAFAFA;
+    text-align: center;
+    width: 100%;
+    height: 100px;
+}
+.header > header {
+    display: block;
+    padding: 20px 0 0 0; 
+    margin: 0 auto;
+    text-shadow: 1px 1px #5D2030;
+}
+/*
+ * Content
+ */
+.content {
+    padding: 100px 0 0 0;
+    margin: 0 auto;
+    width: 500px;
+}
+form {
+    width: 320px;
+    margin: 0 auto;
+}
+.form > form > * {
+    display: block;
+}
+select {
+    background: transparent
+    background-image: url(http://i62.tinypic.com/15xvbd5.png);
+    border: none;
+    width: 300px;
+    margin: 0 auto 20px;
+    height: 29px;
+    font-size: 16px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #690202;
+    color: #FAFAFA;
+}
+option {
+    padding:10px 0 10px 20px;
+}
+
+label {
+    font-size: 24px;
+}
+
+input {
+    background-color: #262525;
+    color: #FAFAFA;
+    width: 100px;
+    height: 40px;
+    font-size: 24px; 
+    text-align: center;
+    margin: 0 auto 40px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+/*
+ * Results
+ */
+
+.results{ 
+    display: block;
+    width: 300px;
+    height: 100px;
+    margin: 0 auto;
+}
+.results > #selected {
+    width:150px;
+    float: left;
+    text-align: center;
+}
+.results > #result{
+    width:100px;
+    float: left;
+}
+
