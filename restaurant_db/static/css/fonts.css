@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Vitesse';
+    src: url('../fonts/VitesseSans-Bold.otf');
+}
+@font-face {
+    font-family: 'Vitesse Med';
+    src: url('../fonts/VitesseSans-Medium.otf');
+}
+@font-face {
+    font-family: 'Vitesse Thin';
+    src: url('../fonts/VitesseSans-Thin.otf');
+}
